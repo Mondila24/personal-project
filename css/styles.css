@@ -414,17 +414,17 @@ h1{
 
     .hero-paragraph{
         font-size: 30px;
-        width: 350px;
+        width: 300px;
     }
     .about{
-        height: 230vh;
-        padding-top: 420px;
+        height: 250vh;
+        padding-top: 610px;
     }
     .content-header{
-        font-size: 32px;
+        font-size: 25px;
     }
     .content-heading{
-        font-size: 30px;
+        font-size: 25px;
     }
     .about-header{
         font-size:  50px;
@@ -444,7 +444,7 @@ h1{
         font-size: 15px;
     }
     .service-heading{
-        font-size: 50px;
+        font-size: 40px;
         max-width: 100%;
     }
 
