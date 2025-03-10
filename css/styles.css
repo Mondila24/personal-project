@@ -37,7 +37,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 50px;
-    height: 70vh;
+    height: 90vh;
     background: #673DE6;
     position:   relative;
     z-index:    2;
@@ -48,6 +48,7 @@
     color: #fff;
     margin-top: 220px;
     line-height: 50px;
+    padding-top: 85px;
 }
 .hero-header{
     font-family: "Big Shoulders", sans-serif;
@@ -72,6 +73,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 50px;
+    height: 90vh;
     background: #000;
 }
 .about .content{
@@ -136,7 +138,7 @@
 }
 .services-paragraph{
     justify-self: center;
-    max-width: 50%;
+    width: 500px;
     padding-bottom: 30px;
     padding-left: 50px;
 }
@@ -377,8 +379,12 @@ h1{
         justify-content: space-between;
         padding-top: 18px;
     }
+    .hero-section{
+        height: 190vh;
+    }
     .hero-heading{
         padding-bottom: 900px;
+        padding-top: 50px;
     }
     
     .hero-contents{
@@ -388,10 +394,14 @@ h1{
         line-height: 60px;
         width: 200px;
     }
+    .hero-head{
+        font-size: 30px;
+    }
     .hero-header{
         display: inline-block;
         margin: auto;
         width: 200px;
+        font-size: 30px;
     }
     .hero-contents > h2{
         width: 400px;
@@ -403,26 +413,55 @@ h1{
     }
 
     .hero-paragraph{
-        font-size: 15px;
-        width: 200px;
+        font-size: 30px;
+        width: 350px;
+    }
+    .about{
+        height: 230vh;
+        padding-top: 420px;
+    }
+    .content-header{
+        font-size: 32px;
+    }
+    .content-heading{
+        font-size: 30px;
+    }
+    .about-header{
+        font-size:  50px;
+    }
+    .about-paragraph{
+        font-size:  35px;
+        width:  300px;
     }
     
     .btn1{
         width: 160px;
         line-height: 30px;
+        font-size: 20px;
+    }
+    .btn2{
+        width: 160px;
         font-size: 15px;
+    }
+    .service-heading{
+        font-size: 50px;
+        max-width: 100%;
     }
 
     .services-paragraph{
-        display: inline-block;
-        margin: auto;
-        max-width: 100%;
-        padding-right: 40px;
+        padding: 20px;
+        font-size: 35px;
+    }
+    .service-list{
+        font-size:  25px;
     }
     .service-list > .project2{
         display: inline-block;
         margin: auto;   
         width: 200px;
+    }
+    .projects{
+        padding-left:  20px;
     }
     .project-section{
         display: inline-block;
@@ -430,10 +469,25 @@ h1{
         width: 400px;
     }
     .project-heading{
-        font-size: 20px;
+        font-size: 37px;
     }
     .subtitle{
-        font-size: 11px;
+        font-size: 20px;
+    }
+    .footer-heading{
+        font-size: 30px;
+    }
+    .footer-p1{
+        font-size: 30px;
+    }
+    .footer-p2{
+        font-size: 30px;
+        padding-top: 30px;
+    }
+    .newsletter{
+        font-size: 30px;
+        padding-top: 50px;
+        line-height:    25px;
     }
         
 }
