@@ -256,238 +256,105 @@ h1{
     cursor: pointer;
 }
 
-/*media query for responsiveness*/
-@media(min-width:320px) and (max-width:420px){
-    .nav-link{
-        display: none;
-    }
 
-    .logo{
-        padding-right: 60px;
+
+/*mobile responsiveness styles*/
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 20px;
+        height: auto;
     }
-    header > .container{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 18px;
+    .hero-section, .hero, .about {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 30px;
     }
-    .menu{
-        padding-right: 40px;
-        display: block;
-        font-size: 1.5rem;
+    .hero-contents, .about .content {
+        max-width: 90%;
+        margin: 20px auto;
     }
-    .hero-contents{
-        font-size: 10px;
-        padding-bottom: 500px;
-        line-height: 40px;
-    }
-    .hero-header{
-        font-size: 20px;
-    }
-    .hero-paragraph{
-        font-size: 10px;
-    }
-    .hero-section{
-        display: block;
-        padding-bottom: 1000px;
-    }
-    .hero-heading{
-        padding-bottom: 1000px;
-        height: 50px;
-    }
-    .hero-section .image1 img{
-        width:  200px;
-        position:  relative; 
+    .hero-section .image1 img, .about .image img {
+        width: 180px;
+        margin: 20px auto;
         left: 0;
-        margin-top:  350px;
+        bottom: 0;
     }
-    
-    .about{
-        display: block;
-        font-size:  10px;
-
+    .projects {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
     }
-    .content{
-        padding-top: 30px;
-        font-size:  15px;
+    .project1 img, .project3 img {
+        width: 95%;
     }
-    .content-heading{
-        font-size:  20px;
+    .project2 img{
+        width: 270px;
     }
-
-    /*services-section*/
-    .service-list{
-        display: block;
-    }
-    .service-list > .service{
-        margin-top: 30px;
-    }
-    .services-paragraph{
-        display: inline;
-        justify-self: center;
-    }
-
-    /*projects section*/
-    .projects{
-        display: block;
-    }
-    .project-section{
-        font-size: 10px;
-    }
-
-    .project1, .project2, .project3{
-        margin-top: 50px;
-        max-width: 50px;
-    }
-    .project1{
-        width: 100px;
-    }
-
-    /*footer*/
-    .footer{
-        display: block;
-    }
-
     .newsletter{
-        padding-top: 30px;
+        padding-top: 50px;
     }
     .newsletter-heading{
-        padding-bottom: 40px;
-        line-height: 0;
+        padding-bottom: 50px;
     }
-
-
 }
 
-/*@media(min-width:375px) and (max-width:767px)*/
-@media(min-width:375px) and (max-width:767px){
-     .nav-link{
-        display: none;
-    }
-
-    .logo{
-        size: 50px;
-        padding-left: -40px;
-    }
-    .menu{
-        padding-right: -60px;
-        display: block;
-        font-size: 1.5rem;
-    }
-    
-    header > .container{
-        display: flex;
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: row;
         justify-content: space-between;
-        padding-top: 18px;
     }
-    .hero-section{
-        height: 190vh;
+    .navbar > .nav-list {
+        display: none;
+        flex-direction: column;
+        background: #673DE6;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        gap: 15px;
+        padding: 10px 0;
     }
-    .hero-heading{
-        padding-bottom: 900px;
-        padding-top: 50px;
+    .navbar.active .nav-list {
+        display: flex;
     }
-    
-    .hero-contents{
-        font-size: 20px;
-        display: inline-block;
-        margin: auto;
-        line-height: 60px;
-        width: 200px;
+    .menu {
+        display: block;
+        cursor: pointer;
     }
-    .hero-head{
-        font-size: 30px;
-    }
-    .hero-header{
-        display: inline-block;
-        margin: auto;
-        width: 200px;
-        font-size: 30px;
-    }
-    .hero-contents > h2{
-        width: 400px;
-    }
-    .content-heading{
-        display: inline-block;
-        margin: auto;
-        width: 200px;
-    }
-
-    .hero-paragraph{
-        font-size: 30px;
-        width: 300px;
-    }
-    .about{
-        height: 275vh;
-        padding-top: 670px;
-    }
-    .content-header{
-        font-size: 25px;
-    }
-    .content-heading{
-        font-size: 25px;
-    }
-    .about-header{
-        font-size:  50px;
-    }
-    .about-paragraph{
-        font-size:  35px;
-        width:  300px;
-    }
-    
-    .btn1{
-        width: 160px;
-        line-height: 30px;
-        font-size: 20px;
-    }
-    .btn2{
-        width: 160px;
-        font-size: 15px;
-    }
-    .service-heading{
-        font-size: 40px;
-        max-width: 100%;
-    }
-
-    .services-paragraph{
-        padding: 20px;
-        font-size: 35px;
-    }
-    .service-list{
-        font-size:  25px;
-    }
-    .service-list > .project2{
-        display: inline-block;
-        margin: auto;   
-        width: 200px;
-    }
-    .projects{
-        padding-left:  20px;
-    }
-    .project-section{
-        display: inline-block;
-        margin: auto;
-        width: 400px;
-    }
-    .project-heading{
-        font-size: 37px;
-    }
-    .subtitle{
-        font-size: 20px;
-    }
-    .footer-heading{
-        font-size: 30px;
-    }
-    .footer-p1{
-        font-size: 30px;
-    }
-    .footer-p2{
-        font-size: 30px;
-        padding-top: 30px;
+    .service-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
     .newsletter{
-        font-size: 30px;
-        padding-top: 50px;
-        line-height:    25px;
+        padding-top: 30px;
     }
-        
+    .newsletter-paragraph{
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-header {
+        font-size: 24px;
+    }
+    .btn1, .btn2 {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+    .services-paragraph {
+        width: 90%;
+        padding-left: 0;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .newsletter{
+        padding-top: 30px;
+    }
+    .newsletter-paragraph{
+        padding-bottom: 50px;
+    }
 }
