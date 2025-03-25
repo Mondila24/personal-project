@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    background-color: #F4F5FF;
+    background-color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,14 +38,14 @@
     justify-content: space-between;
     padding: 50px;
     height: 90vh;
-    background: #673DE6;
+    background: #F9F9FF;
     position:   relative;
-    z-index:    2;
+    z-index: 2;
     top:    0;   
 }
 .hero-contents{
     max-width: 55%;
-    color: #fff;
+    color: #000;
     margin-top: 220px;
     line-height: 50px;
     padding-top: 85px;
@@ -65,7 +65,7 @@
     position: relative;
     left: 800px;
     bottom: 200px;
-    box-shadow: -12px -12px 8px #000, 12px 12px 8px blue;
+    box-shadow: -12px -12px 8px #000, 12px 12px 8px grey;
 }
 
 .hero, .about {
@@ -74,11 +74,11 @@
     justify-content: space-between;
     padding: 50px;
     height: 90vh;
-    background: #000;
+    background: lightgrey;
 }
 .about .content{
     max-width: 50%;
-    color: #fff;
+    color: #000;
 }
 .content-heading{
     line-height: 70px;
@@ -88,11 +88,11 @@
     width: 200px;
     border: solid #fff;
     border-radius: 10px;
-    box-shadow: -12px -12px 8px blue, 12px 12px 8px #673DE6;
+    box-shadow: -12px -12px 8px grey, 12px 12px 8px #000;
 }
 .btn1{
     display: inline-block;
-    background: #000;
+    background: grey;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -102,7 +102,7 @@
 }
 .btn2{
     display: inline-block;
-    background: #673DE6;
+    background: grey;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -127,10 +127,10 @@
 .services{
     text-align: center;
     padding: 50px;
-    background: #673DE6;
+    background: #FFFFFF;
 }
 .service-contents{
-    color: #fff;
+    color: #000;
 }
 .service-heading{
     font-style: italic;
@@ -153,8 +153,7 @@
     padding-bottom: 20px;
 }
 .service > h3:hover{
-    color: #2F1C6A;
-    color: blue;
+    color: grey;
     font-size: 30px;
     text-decoration: underline;
 }
@@ -166,7 +165,7 @@
 }
  
 .project-section{
-    background-color: #fff;
+    background-color: #F9F9FF;
     width: 100%;
     margin: auto;
     height: 100%;
@@ -196,20 +195,20 @@ h1{
 }
 .project1 img{
     font-size: 20px;
-    box-shadow: -12px -12px 8px blue, 12px 12px 8px #000;
+    box-shadow: -12px -12px 8px grey, 12px 12px 8px #000;
     width: 280px;
     border-radius: 20px;
     display: block;
 }
 .project2 img{
-    box-shadow: -12px -12px 8px blue, 12px 12px 8px #000;
+    box-shadow: -12px -12px 8px grey, 12px 12px 8px #000;
     width: 300px;
     height:  29vh;
     border-radius: 20px;
     display: block;
 }
 .project3 img{
-    box-shadow: -12px -12px 8px blue, 12px 12px 8px #000;
+    box-shadow: -12px -12px 8px grey, 12px 12px 8px #000;
     width: 300px;
     border-radius: 20px;
     display: block;
