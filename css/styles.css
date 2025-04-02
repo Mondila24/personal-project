@@ -12,9 +12,9 @@
     height: 17vh;
     margin: auto;
     padding: 50px;
-    position:   fixed; 
+    /*position:   fixed; 
     z-index:  10;
-    top:    0; 
+    top:    0; */
 }
 .navbar > .nav-list{
     text-decoration: none;
