@@ -310,17 +310,19 @@ h1{
     .navbar > .nav-list {
         display: none;
         flex-direction: column;
-        background: #673DE6;
-        position: absolute;
+        background: #fff;
+        /*position: absolute;*/
         top: 60px;
         right: 0;
         width: 100%;
+        /*height: 100%;*/
         text-align: center;
         gap: 15px;
         padding: 10px 0;
     }
     .navbar.active .nav-list {
         display: flex;
+        justify-content: flex-start;
     }
     .menu {
         display: block;
