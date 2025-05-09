@@ -39,3 +39,17 @@
         </div>
     </section>
     <!-- about-section ends here -->
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuButton = document.querySelector(".menu");
+            const navbar = document.querySelector(".navbar");
+            
+            menuButton.addEventListener("click", function() {
+                navbar.classList.toggle("active");
+            });
+        });
+    </script>
+
+</body>
+</html>
