@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otete Monday - Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Delicious+Handrawn&family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -21,6 +23,7 @@
                     <li class="nav-item"><a href="projects.html" class="nav-link">Project</a></li>
                     <li class="nav-item"><a href="contacts.html" class="nav-link">Contact</a></li>
                 </ul>
+                <button class="theme-toggle" aria-label="Toggle theme"></button>
                 <div class="menu"><i class="fa-solid fa-bars"></i></div>
             </nav>
         </div>
@@ -42,12 +45,31 @@
     
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.body.classList.toggle('dark', savedTheme === 'dark');
             const menuButton = document.querySelector(".menu");
             const navbar = document.querySelector(".navbar");
             
-            menuButton.addEventListener("click", function() {
-                navbar.classList.toggle("active");
-            });
+            if (menuButton && navbar) {
+                menuButton.addEventListener("click", function() {
+                    navbar.classList.toggle("active");
+                    const isOpen = navbar.classList.contains('active');
+                    menuButton.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+                    menuButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+            }
+
+            const themeBtn = document.querySelector('.theme-toggle');
+            if (themeBtn) {
+                themeBtn.innerHTML = savedTheme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+                themeBtn.addEventListener('click', function(){
+                    const isDark = document.body.classList.contains('dark');
+                    const next = isDark ? 'light' : 'dark';
+                    document.body.classList.toggle('dark', next === 'dark');
+                    localStorage.setItem('theme', next);
+                    themeBtn.innerHTML = next === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+                });
+            }
         });
     </script>
 

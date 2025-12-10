@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otete Monday - Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Delicious+Handrawn&family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
+    <link rel="preload" as="style" href="https://unpkg.com/aos@next/dist/aos.css" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
 </head>
 <body>
-    <!-- header-section -->
     <header>
         <div class="container">
             <img src="images/logo1.jpg" class="logo">
@@ -21,20 +25,19 @@
                     <li class="nav-item"><a href="projects.html" class="nav-link">Project</a></li>
                     <li class="nav-item"><a href="contacts.html" class="nav-link">Contact</a></li>
                 </ul>
+                <button class="theme-toggle" aria-label="Toggle theme"></button>
                 <div class="menu"><i class="fa-solid fa-bars"></i></div>
             </nav>
         </div>
-    
-    <!-- header-section ends here -->
+    </header>
 
-    <!-- hero-section -->
     <section class="hero-heading">
         <div class="hero-section">
             <div class="hero-contents">
                 <h2 class="hero-head">THIS IS ME</h2>
                 <h1 class="hero-header">OTETE MONDAY</h1>
                 <p class="hero-paragraph">
-                    Welcome to my portfolio! I'm Otete Monday, a passionate web developer with a drive to create innovative and effective digital solutions. From learning Front-end, Back-end, Website Maintenance to Website Hosting & Setup, i've  got you covered.
+                    Welcome to my portfolio! I'm Otete Monday, a passionate web developer with a drive to create innovative and effective digital solutions. From learning Front-end, Back-end, Website Maintenance to Website Hosting & Setup, i've got you covered.
                 </p>
                 <a href="#" class="btn1">DISCOVER NOW</a>
                 <div class="image1">
@@ -43,9 +46,7 @@
             </div>
         </div>
     </section>
-    <!-- hero-section ends here-->
 
-    <!-- about-section -->
     <section class="about">
         <div class="image">
             <img src="images/mandela1.jpg" alt="Otete Monday">
@@ -59,9 +60,7 @@
             <a href="#" class="btn2">VIEW FULL DETAILS</a>
         </div>
     </section>
-    <!-- about-section ends here -->
 
-    <!-- services-section -->
     <section class="services">
         <div class="service-contents">
             <h1 class="service-heading">MY SERVICES</h1>
@@ -70,72 +69,247 @@
             </p>
         </div>
         <div class="service-list">
-
             <div class="service">
                 <i class="fa-solid fa-code"></i>
                 <h3>Front-end Development</h3>
-                <p>
-                    "Frontend development refers to the process of creating the visual and interactive aspects of a website or web application that users directly engage with. It involves using technologies like HTML (structure), CSS (styling), and JavaScript (functionality) to build user-friendly interfaces. Frontend developers ensure that websites are responsive, fast, and accessible across different devices and browsers."
-                </p>
+                <p>Frontend development refers to the process of creating the visual and interactive aspects of a website or web application that users directly engage with.</p>
             </div>
             <div class="service">
                 <i class="fa-solid fa-code"></i>
                 <h3>Back-end Development</h3>
-                <p>
-                    "Backend development refers to the server-side logic and database management that power a website or web application. It involves handling requests, processing data, and ensuring smooth communication between the frontend and the database. Backend developers use programming languages like Node.js, Python, Java, PHP, or Ruby and work with databases such as MySQL, PostgreSQL, or MongoDB. They also manage APIs, authentication, security, and server infrastructure to ensure the application runs efficiently."
-                </p>
+                <p>Backend development refers to the server-side logic and database management that power a website or web application.</p>
             </div>
             <div class="service">
                 <i class="fa-solid fa-cash-register"></i>
                 <h3>E-commerce Development</h3>
-                <p>
-                    "E-commerce development refers to the process of building and optimizing online stores and digital platforms for buying and selling goods or services. It involves designing the frontend (user interface), backend (server-side logic), payment integration, security, and database management. Developers use platforms like Shopify, WooCommerce, Magento, or custom-built solutions with technologies such as HTML, CSS, JavaScript, PHP, and APIs. E-commerce development ensures a seamless shopping experience, including product management, checkout, and order processing."
-                </p>
+                <p>E-commerce development refers to building and optimizing online stores and digital platforms for buying and selling goods or services.</p>
             </div>
             <div class="service">
                 <i class="fa-solid fa-brush"></i>
                 <h3>Website Maintenance</h3>
-                <p>
-                    "Website maintenance refers to the ongoing process of updating, monitoring, and optimizing a website to ensure it remains functional, secure, and up-to-date. It includes tasks like fixing bugs, updating content, improving performance, ensuring security, and optimizing for SEO. Regular maintenance helps prevent downtime, enhances user experience, and keeps the website aligned with current web standards."
-                </p>
+                <p>Website maintenance refers to updating, monitoring, and optimizing a website to ensure it remains functional, secure, and up-to-date.</p>
             </div>
             <div class="service">
                 <i class="fa-brands fa-digital-ocean"></i>
                 <h3>Digital Marketing</h3>
-                <p>
-                    "Digital marketing refers to the use of online channels and strategies to promote products, services, or brands to a target audience. It includes various techniques such as SEO (Search Engine Optimization), social media marketing, email marketing, content marketing, PPC (Pay-Per-Click) advertising, and influencer marketing. Digital marketing helps businesses reach a wider audience, increase engagement, and drive conversions using platforms like Google, Facebook, Instagram, and YouTube."
-                </p>
+                <p>Digital marketing refers to using online channels and strategies to promote products, services, or brands to a target audience.</p>
             </div>
             <div class="service">
                 <i class="fa-solid fa-mobile-screen-button"></i>
                 <h3>Website Hosting & Setup</h3>
-                <p>
-                    "Website Hosting & Setup is the process of storing and configuring a website on a server to make it accessible online. It involves choosing a hosting provider (like Bluehost, SiteGround, or AWS), setting up a domain name, configuring server settings, installing necessary software (such as WordPress or databases), and ensuring security. Hosting types include shared, VPS, dedicated, and cloud hosting, each offering different levels of performance and control. Proper setup ensures a website runs smoothly, loads quickly, and remains secure."
-                </p>
+                <p>Website Hosting & Setup is storing and configuring a website on a server to make it accessible online.</p>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h1 class="project-heading">MY LATEST PROJECTS</h1>
+        <p class="subtitle">Here are the latest projects i've worked on.</p>
+        <div class="projects">
+            <div class="ext-card ext-loruki">
+                <a href="day3/features.html" class="ext-link">
+                    <div class="ext-thumb"><img src="day3/images/cloud.jpg" alt="Loruki Cloud Hosting" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>Loruki Cloud Hosting</h3><p>Fast, efficient, scalable cloud hosting</p></div>
+                </a>
+            </div>
+            <div class="ext-card ext-acrylic">
+                <a href="day8/index.html" class="ext-link">
+                    <div class="ext-thumb"><img src="day8/images/paint1.png" alt="Acrylic Gallery" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>Acrylic Gallery</h3><p>Animated painting collection</p></div>
+                </a>
+            </div>
+
+            <div class="ext-card ext-blog">
+                <a href="../blog-site/index.html" class="ext-link">
+                    <div class="ext-thumb"><img src="images/banner.png" alt="Blog Site" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>Blog Site</h3><p>Personal blogging platform</p></div>
+                </a>
+            </div>
+            <div class="ext-card ext-dashboard">
+                <a href="../dashboard/index.html" class="ext-link">
+                    <div class="ext-thumb"><img src="images/innomatics.png" alt="Dashboard" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>Dashboard</h3><p>Analytics dashboard</p></div>
+                </a>
+            </div>
+            <div class="ext-card ext-ecommerce">
+                <a href="../ecommerce-site/index.html" class="ext-link">
+                    <div class="ext-thumb"><img src="images/nigeria.jpg" alt="E-commerce Site" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>E-commerce Site</h3><p>Online store demo</p></div>
+                </a>
+            </div>
+            <div class="ext-card ext-landing">
+                <a href="../landing-page/index.html" class="ext-link">
+                    <div class="ext-thumb"><img src="images/banner.png" alt="Landing Page" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>Landing Page</h3><p>Marketing page</p></div>
+                </a>
+            </div>
+
+            <!-- Additional project cards -->
+            <div class="ext-card ext-day6-animation">
+                <a href="../day6/animation.html" class="ext-link">
+                    <div class="ext-thumb"><img src="../day6/images/mario.jpg" alt="Day 6 Animation" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>Animation</h3><p>CSS keyframes demo</p></div>
+                </a>
+            </div>
+            
+            <div class="ext-card ext-day6-mario">
+                <a href="../day6/mario.html" class="ext-link">
+                    <div class="ext-thumb"><img src="../day6/images/luigi.jpg" alt="Day 6 Mario" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>Mario</h3><p>Sprites and movement</p></div>
+                </a>
+            </div>
+            <div class="ext-card ext-day6-popup">
+                <a href="../day6/popup.html" class="ext-link">
+                    <div class="ext-thumb"><img src="../day6/images/cloud.jpg" alt="Day 6 Popup" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>Popup</h3><p>Modal interactions</p></div>
+                </a>
+            </div>
+
+            <div class="ext-card ext-day11">
+                <a href="../day11/index.html" class="ext-link">
+                    <div class="ext-thumb"><img src="../day11/images/scroll1.jpg" alt="Day 11" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>JavaScript Scrolling</h3><p>Scrolling effects</p></div>
+                </a>
+            </div>
+
+            <div class="ext-card ext-colorflipper-index">
+                <a href="../day13/index.html" class="ext-link">
+                    <div class="ext-thumb"><img src="images/banner.png" alt="Color Flipper Index" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>Simple Color Flipper</h3><p>Color Flipper</p></div>
+                </a>
+            </div>
+            
+            <div class="ext-card ext-grocery">
+                <a href="../Grocery Bud/index.html" class="ext-link">
+                    <div class="ext-thumb"><img src="images/bars.jpg" alt="Grocery Bud" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>Grocery Bud</h3><p>List manager</p></div>
+                </a>
+            </div>
+            <div class="ext-card ext-menu">
+                <a href="../menu/index.html" class="ext-link">
+                    <div class="ext-thumb"><img src="../menu/images/item-1.jpeg" alt="Menu" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>Menu</h3><p>Filterable menu</p></div>
+                </a>
+            </div>
+            <div class="ext-card ext-reviews">
+                <a href="../Reviews/index.html" class="ext-link">
+                    <div class="ext-thumb"><img src="../Reviews/images/person-1.jpeg" alt="Reviews" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>Reviews</h3><p>User testimonials</p></div>
+                </a>
+            </div>
+            <div class="ext-card ext-video">
+                <a href="../video player/index.html" class="ext-link">
+                    <div class="ext-thumb"><img src="../video player/images/preloader.gif" alt="Video Player" loading="lazy" decoding="async"></div>
+                    <div class="ext-body"><h3>Video Player</h3><p>Custom controls</p></div>
+                </a>
             </div>
         </div>
     </section>
-    <!-- service-section ends here -->
 
-    <!-- project-section -->
-    <div class="project-section">
-        <h1 class="project-heading">MY LATEST PROJECTS</h1>
-        <p class="subtitle">
-            Here are the latest projects i've worked on.
-        </p>
-        <div class="projects">
-            <div class="project1">
-                <img src="images/banner.png" alt="Project 1">
+    <!-- Loruki and Acrylic moved into Services below -->
+
+    <!-- contact-section -->
+    <section class="contact-section">
+        <h1 class="contact-main-heading">GET IN TOUCH</h1>
+        <p class="contact-intro">I'd love to hear from you! Whether you have a question or just want to say hi, feel free to drop a message.</p>
+
+        <div class="contact-wrapper">
+            <div class="contact-info-box">
+                <h2 class="info-title">Contact Details</h2>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p>otetemonday@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Phone</h3>
+                        <p>+234 704 842 4336</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Location</h3>
+                        <p>Nigeria</p>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="http://wa.me/2348069309405" class="social-icon whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mon_dila?igsh=MWJsNG11eXExdTRxag%3D%3D&utm_source=qr" class="social-icon instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/monday-otete-280ba0344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-icon linkedin">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="project2">
-                <img src="images/nigeria.jpg" alt="Project 2">
-            </div>
-            <div class="project3">
-                <img src="images/innomatics.png" alt="Project 3">
+
+            <div class="contact-form-box">
+                <h2 class="form-title">Send Me a Message</h2>
+
+                <!-- Success Message (hidden by default) -->
+                <div id="success-message" style="display: none; margin-bottom: 20px; padding: 20px; background: #4CAF50; color: white; border-radius: 8px; text-align: center;">
+                    <i class="fa-solid fa-check-circle" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                    <h3 style="margin: 10px 0;">Message Sent Successfully!</h3>
+                    <p style="margin: 0;">Thank you for reaching out! I'll get back to you as soon as possible.</p>
+                </div>
+
+                <!-- Contact Form -->
+                <form action="https://formsubmit.co/otetemonday@gmail.com" method="POST" class="contact-form" id="contactForm">
+                    <!-- FormSubmit Configuration - Remove _next to stay on same page -->
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <!-- This makes the form redirect back to contacts.html after submission -->
+                    <input type="text" name="_honey" style="display:none">
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit-btn" id="submitBtn">
+                        <span>Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
         </div>
-    </div>
-    <!-- projection-section ends here -->
+    </section>
+    <!-- contact-section ends here -->
 
     <!-- footer-section -->
     <div class="footer">
@@ -143,33 +317,90 @@
             <h3 class="footer-heading">About Me</h3>
             <p class="footer-p1">
                 You can get more informations on what we do via our social medias below...<br>
-                <a href="http://wa.me/2348069309405" style="color: green;"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/mon_dila?igsh=MWJsNG11eXExdTRxag%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram" style="color: red;"></i></a>
-                <a href="https://www.linkedin.com/in/monday-otete-280ba0344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" style="color: skyblue;"><i class="fa-brands fa-linkedin"></i></a> 
+                <a href="http://wa.me/2348069309405"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/mon_dila?igsh=MWJsNG11eXExdTRxag%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/monday-otete-280ba0344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
             </p>
-             
+
             <p class="footer-p2">
                 Copyright &copy; 2025 All rights reserved<br><span>This webpage is made with</span> ❤️ by <a href="#" style="color: lightblue;">Mandela</a>
             </p>
         </div>
         <div class="newsletter">
             <h3 class="newsletter-heading">Newsletter</h3>
-            <p class="newsletter-paragraph">Stay updated with our latest trends...</p>
+            <p class="newsletter-paragraph">Stay updated with our latest trends</p>
             <input type="email" placeholder="Enter Email Address"><button>&rarr;</button>
         </div>
     </div>
     <!-- footer-section ends here -->
-    </header>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.body.classList.toggle('dark', savedTheme === 'dark');
+
             const menuButton = document.querySelector(".menu");
             const navbar = document.querySelector(".navbar");
-            
-            menuButton.addEventListener("click", function() {
-                navbar.classList.toggle("active");
-            });
+            const themeBtn = document.querySelector('.theme-toggle');
+            if (themeBtn) {
+                themeBtn.innerHTML = savedTheme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+                themeBtn.addEventListener('click', function(){
+                    const isDark = document.body.classList.contains('dark');
+                    const next = isDark ? 'light' : 'dark';
+                    document.body.classList.toggle('dark', next === 'dark');
+                    localStorage.setItem('theme', next);
+                    themeBtn.innerHTML = next === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+                });
+            }
+
+            if (menuButton && navbar) {
+                menuButton.addEventListener("click", function() {
+                    navbar.classList.toggle("active");
+                    const isOpen = navbar.classList.contains('active');
+                    menuButton.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+                    menuButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+            }
+
+            // Handle form submission with visual feedback
+            const contactForm = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    // Change button text to show loading state
+                    submitBtn.innerHTML = '<span>Sending...</span><i class="fa-solid fa-spinner fa-spin"></i>';
+                    submitBtn.disabled = true;
+
+                    // Store form submission in localStorage so we can show success message after redirect
+                    localStorage.setItem('formSubmitted', 'true');
+                });
+            }
+
+            // Check if form was just submitted (after page reload from FormSubmit)
+            if (localStorage.getItem('formSubmitted') === 'true') {
+                // Show success message
+                document.getElementById('success-message').style.display = 'block';
+                document.getElementById('contactForm').style.display = 'none';
+
+                // Clear the flag
+                localStorage.removeItem('formSubmitted');
+
+                // Scroll to success message
+                document.getElementById('success-message').scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                // Reset form after 5 seconds
+                setTimeout(function() {
+                    document.getElementById('success-message').style.display = 'none';
+                    document.getElementById('contactForm').style.display = 'block';
+                    document.getElementById('contactForm').reset();
+                }, 5000);
+            }
         });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 400, duration: 1000 });
     </script>
 
 </body>
